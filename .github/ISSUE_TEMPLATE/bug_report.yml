@@ -1,0 +1,47 @@
+name: Bug report
+description: Report something that is not working
+title: "[Bug] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. Do not include passwords, tokens,
+        private keys, or other sensitive information.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: input
+    id: system
+    attributes:
+      label: Operating system / environment
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant error output
+      description: Remove secrets and private information first.
